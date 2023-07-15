@@ -569,9 +569,7 @@ button:hover {
   nav a {
     font-size: 20px;
   }
-  .inputBox input {
-    font-size: 16px;
-  }
+ 
 }
 
 @media screen and (max-width: 1300px) {
@@ -658,101 +656,392 @@ button:hover {
   }
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width: 1000px) {
   /*Schriftgrössen inkl. Button*/
   h1 {
-      font-size: 26px;
+    font-size: 26px;
   }
   h4 {
-      font-size: 18px;
+    font-size: 18px;
   }
   h5 {
-      font-size: 12px;
+    font-size: 12px;
   }
   p {
-      font-size: 12px;
-      margin-block-start: 1rem;
-      margin-block-end: 1rem;
+    font-size: 12px;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
   }
   .subtotal,
   .deliver,
   .total {
-      font-size: 14px;
+    font-size: 14px;
   }
   button {
-      font-size: 14px;
+    font-size: 14px;
   }
   nav a {
-      font-size: 18px;
+    font-size: 18px;
   }
   .inputBox input {
-      font-size: 14px;
+    font-size: 14px;
   }
   .menu-container-top {
-      text-align: center;
+    text-align: center;
   }
   /*Bild und warenkorb bereite*/
   .main-img img {
-      width: 70%;
+    width: 70%;
   }
   .warenkorb {
-      width: 30vw;
+    width: 30vw;
   }
   /*Margin hauptbereich*/
   .rest-info-container {
-      margin-left: 4vw;
-      width: 80%;
-      text-align: center;
+    margin-left: 4vw;
+    width: 80%;
+    text-align: center;
   }
   nav {
-      margin-left: 4vw;
+    margin-left: 4vw;
   }
   .gericht-info {
-      margin-left: 4vw;
+    margin-left: 4vw;
   }
   /* Footer*/
   .footer-container a {
-      font-size: 14px;
+    font-size: 14px;
   }
   /* Rundes Logo*/
   .rundeslogo {
-      width: 60px;
-      height: 60px;
-      margin-top: -2rem;
-      margin-bottom: 1.5rem;
+    width: 60px;
+    height: 60px;
+    margin-top: -2rem;
+    margin-bottom: 1.5rem;
   }
   .rundeslogo img {
-      margin-left: 10px;
-      margin-top: 8px;
+    margin-left: 10px;
+    margin-top: 8px;
   }
   .footer-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 30px;
   }
   .footer-links a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 14px;
-      margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 8px;
   }
   .icons-a a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
   }
   .pfeil {
-      margin-top: 10px;
+    margin-top: 10px;
   }
   .footer-container p {
-      padding-top: 8px;
-      padding-bottom: 0px;
-      text-align: center;
-      z-index: 0;
+    padding-top: 8px;
+    padding-bottom: 0px;
+    text-align: center;
+    z-index: 0;
   }
 }
 /*Ab hier ein einklappbaren warenkorb*/
+
+@media screen and (max-width: 800px) {
+  /*Schriftgrössen inkl. Button*/
+  .bodyFixed {
+    position: fixed !important;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+  }
+  .subtotal,
+  .deliver,
+  .total {
+    font-size: 16px;
+  }
+  button {
+    font-size: 16px;
+  }
+  nav a {
+    font-size: 16px;
+  }
+ 
+  .menu-container-top {
+    text-align: center;
+  }
+  /*Bild und warenkorb bereite*/
+  .main-img img {
+    width: 100%;
+  }
+  .warenkorb {
+    z-index: 5;
+    width: 100%;
+    margin-top: -40px;
+    background-color: white;
+  }
+  /*Margin hauptbereich*/
+  .rest-info-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin-left: 10vw;
+  }
+  nav {
+    margin-left: 10vw;
+    width: 80vw;
+  }
+  .gericht-info {
+    margin-left: 10vw;
+    width: 80vw;
+  }
+  /* Footer*/
+  .footer-container a {
+    font-size: 14px;
+  }
+  /* Rundes Logo*/
+  .rundeslogo {
+    z-index: 0;
+    width: 60px;
+    height: 60px;
+    margin-top: -2rem;
+    margin-bottom: 1.5rem;
+  }
+  .rundeslogo img {
+    margin-left: 10px;
+    margin-top: 8px;
+  }
+  /*Mini Warenkorb */
+  #miniKorb {
+    display: flex;
+    cursor: pointer;
+  }
+  #miniKorb2 {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    width: 40px;
+    height: 30px;
+    object-fit: cover;
+  }
+  #close {
+    display: flex;
+    cursor: pointer;
+  }
+  .d-nn {
+    display: none;
+  }
+  /*Input*/
+
+  /*Header*/
+  .menu-container-top {
+    height: 60px;
+  }
+  .menu-container-top div {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  #close {
+    width: 36px;
+    margin-top: 12px;
+    margin-left: 12px;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+  .footer-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  .icons-a a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+  }
+  .pfeil {
+    margin-top: 10px;
+  }
+  .footer-container p {
+    padding-top: 8px;
+    padding-bottom: 0px;
+    text-align: center;
+    z-index: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0px;
+  }
+  .bodyFixed {
+    position: fixed !important;
+  }
+  h1 {
+    font-size: 14px;
+  }
+  h4 {
+    font-size: 12px;
+  }
+  h5 {
+    font-size: 12px;
+  }
+  p {
+    font-size: 10px;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+  }
+  .subtotal,
+  .deliver,
+  .total {
+    font-size: 12px;
+  }
+  button {
+    font-size: 12px;
+  }
+  nav a {
+    font-size: 12px;
+  }
+  
+  .menu-container-top {
+    text-align: center;
+  }
+  /*Header*/
+  .menu-container-top {
+    height: 60px;
+  }
+  .menu-container-top div {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .menu-container-top img {
+    width: 30px;
+    height: 30px;
+  }
+  #restaurantlogo {
+    display: none;
+  }
+  .rundeslogo {
+    display: none;
+  }
+  .main-img img {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    margin-bottom: 36px;
+  }
+  .sternen img {
+    width: 70px;
+  }
+  .rest-info-img img {
+    width: 16px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  nav {
+    margin-bottom: 12px;
+    align-items: center;
+  }
+  nav img {
+    display: none;
+  }
+  #miniKorb2 {
+    width: 30px;
+    margin-left: -5px;
+  }
+  .basket-place {
+    max-height: 60vh;
+  }
+  #summe {
+    margin-top: 10px;
+  }
+  .warenkorb {
+    margin-top: -50px;
+    position: fixed;
+    height: 100vh;
+  }
+  #close {
+    width: 24px;
+    margin-top: 12px;
+    margin-left: 12px;
+  }
+  .rest-info {
+    margin-top: -25px;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+  .footer-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    margin-top: 8px;
+  }
+  .icons-a a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+  }
+  .pfeil {
+    margin-top: 10px;
+  }
+  .footer-container p {
+    padding-top: 8px;
+    padding-bottom: 0px;
+    text-align: center;
+    z-index: 0;
+  }
+ 
+  .warenkorb-container-titel {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .basket-place {
+      max-height: 35vh;
+  }
+  #summe {
+      margin-top: -5px;
+  }
+ 
+  .warenkorb-container-titel {
+      height: 50px;
+  }
+
+}

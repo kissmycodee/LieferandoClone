@@ -243,6 +243,10 @@ function generatePaymentHtml(sum1, versand, sum2) {
 </div>`;
 }
 
+
+
+
+
 function warenkorbEinblenden() {
   document.getElementById(`summe`).classList.remove(`d-none`);
 }
@@ -294,5 +298,5 @@ function einMiniBaskekt() {
 function ausMiniBaskekt() {
   document.getElementById(`warenkorb-position`).classList.add(`d-nn`);
   document.getElementById(`body`).classList.remove(`bodyFixed`);
-  render();
+  renderMeals();
 }
