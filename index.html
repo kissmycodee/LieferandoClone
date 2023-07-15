@@ -4,80 +4,135 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
     <link rel="stylesheet" href="style.css" />
-    <title>Lieferfood</title>
+    <script src="script.js"></script>
+    <title>LieferFood</title>
     <link rel="icon" href="img/chef.png">
   </head>
-  <body onload="renderMeals()">
-    <header>
-      <div class="icon">
-        <i class="fa-solid fa-utensils"></i>
-        <span><b>HungryYou</b>.de</span>
-      </div>
-      <div class="adress">
-        <span><b>Lilienstraße3, Leipzig</b></span>
-        <div class="underline"></div>
-      </div>
-      <div class="close">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-    </header>
 
-    <section class="container">
-      <div class="section-content">
-        <img class="section-img" src="img/pizza.jpg" alt="pizza" />
+  <body onload="renderMeals()" id="body">
+    <div class="menu-container-top">
+      <div>
 
-        <div class="meal-section">
-          <div class="feedback-section">
-              <div>
-                <h2>Hungry Meal</h2>
-                <span>Gefällt dir unser Menü</span>
-                <div class="stars-section">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star-half"></i>
-                  <span>Bewertungen</span>
-                </div>
-              </div>
-              <div class="button-section">
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-solid fa-circle-info"></i>
-              </div>
+          <img id="main-icon" src="img/restaurant.png">
+          <a href="" target="_blank">
+              <h1><em>LieferFood</em></h1>
+          </a>
+      </div>
+      <div>
+          <a target="" href="#">
+              <h4> Kostenlose lieferung ab 15 € </h4>
+          </a>
+      </div>
+      <div>
+          <img onclick="einMiniBaskekt()" id="miniKorb" src="img/add-to-cart.png">
+          <img id="restaurantlogo" src="img/restaurant.png">
+      </div>
+  </div>
+
+  <div class="body">
+
+
+    <!--Bild und Warenkorb-->
+    <div class="main-img">
+        <img src="img/burger.jpg">
+    </div>
+
+    <!--Bild und Warenkorb FERTIG -->
+
+    <!--Rundes Bild -->
+
+    <div class="rundeslogo">
+        <img src="img/fast-food.png">
+    </div>
+    <!--Rundes Bild Fertig -->
+
+
+    <!--Info container -->
+
+    <div class="info-container">
+        <!--Resturant Info-->
+
+        <div class="rest-info-container">
+            <div class="rest-info">
+                <h2>Big Chefs</h2>
+            </div>
+
+            <div class="rest-info sternen">
+                <img src="img/sterne1.png">
+                <p>(312 Bewertungen)</p>
+            </div>
+            <div class="rest-info-img">
+                <img src="img/uhr.png">
+                <p id="time"> Heute ab 17:00-23:00</p>
+                <img src="img/bicycle.png">
+                <p id="price">5 €</p>
+                <img src="img/tasche.png">
+                <p id="min-price">Min. 30.00 € </p>
+                <img src="img/platzhalter.png">
+                <p id="min-price">München und Umkreis </p>
+            </div>
+            <div class="rest-info">
+                <p>Fleisch aus München Herkunft</p>
+            </div>
+        </div>
+        <!--Resturant Info FERTIG -->
+
+            <!--Navigation Leiste -->
+            <div class="nav-container">
+              <nav id="nav">
+                  <img src="img/search.png">
+                  <a href="#stand0">Burger</a>
+                  <a href="#stand6">Veggie Burger</a>
+                  <a href="#stand7">Salate</a>
+                  <a href="#stand10">Getränke</a>
+                  <img onclick="einMiniBaskekt()" id="miniKorb2" src="img/add-to-cart.png">
+              </nav>
           </div>
 
-          <div class="meals" id="meals">
-            <!-- Meal Boxen kommen hier rein -->
+          <!--Navigation Leiste FERTIG -->
+
+          <div class="gericht-info">
+
+            <div id="burger-gerichte" class="gericht-überschrift">
+                <h4>Unsere Gerichte</h4>
+            </div>
+
+            <div class="cardM" id="input-menu1">
+
+            </div>
+
+        </div>
+
+        <div id="footer-id">
+
+        </div>
+
+        
+        <div id="warenkorb-position" class="warenkorb d-nn">
+          <div class="warenkorb-container-titel">
+              <img onclick="ausMiniBaskekt()" id="close" src="img/cancel.png">
+              <h4>Warenkorb</h4>
+              <hr> </div>
+          <!--JS Warenkorb infos-->
+          <div id="basket-container" class="basket-place ">
+
           </div>
-        </div>
+
+          <div id="payment">
+
+
+          </div>
+
       </div>
 
-     <div class="basket">
-      <div class="basket-content">
-        <h3>Warenkorb</h3>
-        <div class="show-empty" id="showEmpty">
-          <i class="fa-solid fa-basket-shopping"></i>
-          <h3>Warenkorb füllen</h3>
-          <span>wähle etwas leckeres</span>
-        </div>
-        <div class="hide-empty" id="hideEmpty">
+  </div>
+  <!--Info container FERTIG-->
 
-        </div>
-      </div>
-     </div>
-    </section>
-    <div class="mobile-button d-none" id="mobile-button" onclick="openBasket()">
-      <button>Korb</button>
-     </div>
-    <script src="script.js"></script>
+
+</div>
+
+    
+   
   </body>
 </html>
